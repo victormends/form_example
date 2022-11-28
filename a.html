@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.contato span input{
+    margin: 5px;
+}
+
+.contato span textarea{
+    margin: 5px;
+}
+.contato{
+ min-width: 34rem;
+ max-width: 34rem;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+    border-radius: 0.3rem 0 0 0.3rem;
+}
+.main-button {
+    font-size: 1rem;
+    padding: 0.75rem 1.15rem;
+    background-color: #b04a4a;
+    border-radius: 5rem;
+    font-weight: 500;
+    width: max-content;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+}
+html * {
+    font-family: sans-serif;
+}
+.contato input:not([type=submit]), .contato textarea {
+    border-radius: 1.7rem;
+    font-size: .875rem;
+    background-color: #f7f7f7;
+    padding: 1rem 1.5rem;
+    border: none;
+    width: 100%;
+    outline: none;
+    border: 1px inset transparent;
+    transition: .2s ease-in;
+    transition-property: border-color;
+    color: #373435;
+}
+.main-button {
+    display: block;
+    align-self: center;
+    padding-bottom: 0.8rem;
+    margin: auto;
+}
+.main-button svg {
+    fill: #fff;
+    transition: .15s ease-out;
+    transition-property: fill;
+}
+.main-button span {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 700;
+    align-items: center;
+}
+
+
+    </style>
+</head>
+<body>
+        <div class="contato">
+            <span>
+                <input type="text" name="your-clinica" value="" size="40" aria-required="true" aria-invalid="false" placeholder="Clínica:">
+            </span><br>
+            <span>
+                <input type="text" name="your-nanimal" value="" size="40" aria-invalid="false" placeholder="Nome do Animal:"></span>
+            <br><span>
+                <input type="text" name="your-especie" value="" size="40" aria-invalid="false" placeholder="Espécie:"></span>
+            <br><span>
+                <input type="text" name="your-raca" value="" size="40" aria-invalid="false" placeholder="Raça:"></span>
+            <br><span>
+                <input type="text" name="your-sexo" value="" size="40"  aria-invalid="false" placeholder="Sexo:"></span>
+            <br><span>
+                <input type="number" name="your-idade" value="" aria-invalid="false" placeholder="Idade:"></span>
+            <br><span>
+                <input type="text" name="your-ntutor" value="" size="40"  aria-invalid="false" placeholder="Nome do Tutor:"></span>
+            <br><span>
+                <input type="text" name="your-medico" value="" size="40"  aria-invalid="false" placeholder="Médico Veterinário:"></span>
+            <br><span>
+                <input type="text" name="your-crmv" value="" size="40"  aria-invalid="false" placeholder="CRMV:"></span>
+            <br><span>
+                <input type="email" name="your-email" value="" size="40"  aria-invalid="false" placeholder="Email:"></span>
+            <br><span>
+                <input type="datetime-local" value="00-00-00T00:00"type="date" name="your-date" value="" aria-invalid="false" placeholder="Data e Horário da Coleta: &nbsp;"></span>
+            <br><span>
+                <textarea name="your-message" cols="40" rows="10" aria-required="true" aria-invalid="false" placeholder="Considerações:" spellcheck="false"></textarea></span>
+            <br><button type="submit" class="main-button"><span class="default-message">
+                <span>Enviar mensagem</span></div>
+        </div>
+        
+</body>
+</html>

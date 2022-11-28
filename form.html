@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.body .form { 
+    min-width: 34rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+    border-radius: 0.3rem 0 0 0.3rem;
+}
+
+.body .form {
+    min-width: 34rem;
+    display: flex;
+}
+
+.body .form { 
+    min-width: 34rem;
+    display: block;
+    margin: auto;
+}
+
+.body .form {    
+    margin: auto;
+}
+
+.form input[type="date"]:before {
+    content: attr(placeholder);
+    color: #cccccc;
+}
+    </style>
+</head>
+<body>
+    <form>
+        <a><label for="fname">Clínica:</label><br> 
+        <input type="text" id="fname" name="clinica">
+        <label for="lname">Autônomo:</label>
+        <input type="text" id="lname" name="nanimal"><br><br></a>
+        <label for="fname">Nome do Animal:</label>
+        <input type="text" id="fname" name="especie">
+        <label for="lname">Espécie:</label>
+        <input type="text" id="lname" name="raca"><br><br>
+        <label for="fname">Raça:</label>
+        <input type="text" id="fname" name="sexo">
+        <label for="lname">Sexo:</label>
+        <input type="text" id="lname" name="idade">
+        <label for="fname">Idade:</label>
+        <input type="text" id="fname" name="ntutor"><br><br>
+        <label for="lname">Nome do Tutor:</label>
+        <input type="text" id="lname" name="medico"><br><br>
+        <label for="fname">Médico Veterinário:</label>
+        <input type="text" id="fname" name="crmv">
+        <label for="lname">CRMV:</label>
+        <input type="email" id="lname" name="email">
+        <label for="fname">Email:</label>
+        <input type="text" id="fname" name="data"><br><br>
+        <label for="fname">Data e Horário da Coleta:</label>
+        <input type="datetime-local" id="meeting-time"
+            name="meeting-time" value="00-00-00T00:00">
+        <label for="lname">Considerações:</label>
+        <input type="text" id="lname" name="lname"><br><br>
+      </form>
+</body>
+</html>
